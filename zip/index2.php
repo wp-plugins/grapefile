@@ -6,11 +6,11 @@
 * This must be the full path from the root of your 
 * web space. If you're not sure what it is, ask your host. 
 * 
-* Name this file index.php and place in the directory. 
+* Name this file index2.php and place in the directory. 
 */ 
 
 // Define the full path to your folder from root 
-$path = $_SERVER["DOCUMENT_ROOT"]."/wp-content/plugins/Grapefile/filestore/zip/"; 
+$path = $_SERVER["DOCUMENT_ROOT"]."/wp-content/plugins/grapefile/filestore/zip/"; 
 // Open the folder 
 $dir_handle = @opendir($path) or die("Unable to open $path"); 
 

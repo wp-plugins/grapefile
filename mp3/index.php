@@ -10,7 +10,7 @@
 */ 
 
 // Define the full path to your folder from root 
-$path = $_SERVER["DOCUMENT_ROOT"]."/wp-content/plugins/Grapefile/filestore/mp3/"; 
+$path = $_SERVER["DOCUMENT_ROOT"]."/wp-content/plugins/grapefile/filestore/mp3/"; 
 // Open the folder 
 $dir_handle = @opendir($path) or die("Unable to open $path"); 
 
@@ -22,7 +22,7 @@ if($file == "." || $file == ".." || $file == "index.php" || $file == "index2.php
 continue; 
 echo filesize($file) . ' bytes - &nbsp;&nbsp; - &nbsp;&nbsp;';
 
-echo "<a href=\"../wp-content/plugins/Grapefile/filestore/mp3/$file\">$file</a><br>"; 
+echo "<a href=\"../wp-content/plugins/grapefile/filestore/mp3/$file\">$file</a><br>"; 
 
 } 
 
@@ -30,4 +30,4 @@ echo "<a href=\"../wp-content/plugins/Grapefile/filestore/mp3/$file\">$file</a><
 closedir($dir_handle); 
 
 ?>
-<h3 style="border-top: 1px solid #C0C0C0; margin-bottom: -5px">GrapeFile v0.1</h3>
+<h3 style="border-top: 1px solid #C0C0C0; margin-bottom: -5px">GrapeFile 1.1</h3>
